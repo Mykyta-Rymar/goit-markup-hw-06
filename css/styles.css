@@ -110,9 +110,7 @@ ol {
 }
 
 .address {
-    visibility: hidden;
-    width: 0;
-    height: 0;
+    display: none;
 }
 
 .logo {
@@ -454,9 +452,7 @@ body {
     justify-content: center;
     margin-bottom: 8px;
     background-color: #f4f4fd;
-    visibility: hidden;
-    width: 0;
-    height: 0;
+    display: none;
 }
 
 .master-hero-list {
@@ -568,8 +564,7 @@ body {
 }
 
 .section-portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0;
 }
 
 /* .list {
@@ -597,7 +592,6 @@ body {
 
 .portfolio-item {
     max-width: 288px;
-    max-height: 420px;
 }
 
 .portfolio-item-wrap {
@@ -705,6 +699,8 @@ body {
 .master-portfolio {
     margin-bottom: 8px;
 }
+
+
 
 /* ----------------FOOTER----------------- */
 
@@ -1201,25 +1197,26 @@ body {
     }
 
     .header-menu-window {
-    visibility: hidden;
+    display: none;
     }
 
     .menu-button {
-        visibility: hidden;
-        width: 0;
-        height: 0;
-        padding: 0;
+    display: none;
     }
 
     .header-sys {
         padding: 0 16px 0 16px;
         align-items: center;
-        gap: 89px;
+        gap: 122px;
+    }
+
+    .logo {
+        margin-right: 120px;
+        padding: 24px 0;
     }
 
     .header-container {
         visibility:visible;
-        gap: 120px;
     }
 
     .header-list {
@@ -1229,14 +1226,9 @@ body {
     }
 
     .address {
-        visibility: visible;
+        display: block;
         width: auto;
-        height: 60px;
-        font-weight: 400;
-            font-size: 12px;
-            line-height: 1.17;
-            letter-spacing: 0.04em;
-            color: #434455;
+        height: 40px;
     }
 
     .header-address {
@@ -1246,6 +1238,11 @@ body {
 
     .address-mail {
         padding: 0;
+        font-weight: 400;
+            font-size: 12px;
+            line-height: 1.16667;
+            letter-spacing: 0.04em;
+            color: #434455;
     }
 
     .header-container {
@@ -1323,8 +1320,7 @@ body {
     }
 
     .section-portfolio {
-        padding-bottom: 96px;
-        padding-top: 96px;
+        padding: 96px 0;
     }
 
     .portfolio-list {
@@ -1337,7 +1333,6 @@ body {
     .portfolio-item {
         margin-bottom: 0;
         max-width: 356px;
-        max-height: 420px;
     }
 
     .portfolio-item-wrap {
@@ -1392,4 +1387,138 @@ body {
 
 @media screen and (min-width: 1158px) {
     
+    .container {
+        width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .header-sys {
+        display: flex;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .header-container {
+    }
+
+    .address {
+        height: auto;
+    }
+
+    .address-mail {
+        font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: #434455;
+            padding: 24px 0;
+    }
+
+    .header-address {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .master-section {
+        max-width: 1440px;
+        height: 600px;
+    }
+
+    .section-features {
+        padding: 120px 0;
+    }
+
+    .service {
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .master-icons {
+        display: flex;
+    }
+
+    .hero-features {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+    }
+
+    .paragraph {
+        font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: #434455;
+    }
+
+    .master-hero-list {
+        flex-wrap: nowrap;
+        max-width: 1231px;
+        gap: 24px;
+    }
+
+    .master-item {
+        width: calc((100% - 72px) / 4);
+    } 
+
+    .section-team {
+        padding: 120px 0;
+    }
+
+    .list {
+        flex-wrap: nowrap;
+        row-gap: 0;
+    }
+
+    .portfolio-list {
+        row-gap: 48px;
+    }
+
+    .section-portfolio {
+        padding: 120px 0;
+    }
+
+    .portfolio-item {
+        max-width: 360px;
+    }
+
+    .portfolio-item-wrap {
+        overflow: hidden;
+        position: relative;
+    }
+
+    picture {
+        display: block;
+        vertical-align: top;
+        max-height: 300px;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .webstoudio {
+        gap: 120px;
+    }
+
+    .footer-logopar {
+        margin-bottom: 0;
+    }
+
+    .footer-social {
+        margin-bottom: 0;
+    }
 }
