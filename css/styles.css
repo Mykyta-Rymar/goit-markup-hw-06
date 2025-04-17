@@ -476,6 +476,7 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+    display: none;
 }
 
 .section-team {
@@ -1131,9 +1132,7 @@ body {
     letter-spacing: 0.04em;
     color: #8e8f99;
     position: relative;
-    align-items: center;
     display: flex;
-    align-items: flex-start;
     align-items: center;
 }
 
@@ -1142,11 +1141,26 @@ body {
         text-decoration: underline;
         text-decoration-skip-ink: none;
         color: #4d5ae5;
+        white-space: nowrap;
+        
+}
+
+.checkbox-text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 231px;
+        white-space: nowrap;
 }
 
 .checkbox-area {
     text-wrap: nowrap;
     margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-input {
+    display: none;
 }
 
 .privacy-policy {
@@ -1378,6 +1392,14 @@ body {
 
     .checkbox-area {
         width: 360px;
+    }
+
+    .checkbox-text {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: auto;
+        white-space: nowrap;
     }
 
     .privacy-policy {
